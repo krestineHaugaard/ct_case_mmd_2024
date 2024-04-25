@@ -1,6 +1,9 @@
 import "./globals.css";
 import { Poppins, Libre_Baskerville } from "next/font/google";
 
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "700"],
@@ -25,7 +28,11 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${poppins.variable} ${libre_baskerville.variable}`}
     >
-      <body className="font-popp">{children}</body>
+      <body className="font-popp">
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

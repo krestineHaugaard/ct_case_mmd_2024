@@ -1,6 +1,6 @@
 export async function generateStaticParams() {}
 
-export default async function Form() {
+export default function Form() {
   return (
     <form action="/raport">
       <label htmlFor="form_url_data">

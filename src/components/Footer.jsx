@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <footer>
-      <h1> Footer</h1>
+    <footer className="flex justify-center items-center p-4">
+      <p>KEA school project</p>
     </footer>
   );
 }

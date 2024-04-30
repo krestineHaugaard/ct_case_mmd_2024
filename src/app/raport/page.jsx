@@ -5,6 +5,7 @@ export const revalidate = 1800;
 
 export default async function Page({ searchParams }) {
   "use client";
+  await new Promise((resolve) => setTimeout(resolve, 3000));
   const params = new URLSearchParams(searchParams);
   const response = await fetch(
     `https://mmd-a11y-api.vercel.app/api/scan?${params.toString()}`

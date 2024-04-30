@@ -3,7 +3,7 @@ import Form from "@/components/Form";
 export default function Home() {
   return (
     <>
-      <h1 className="font-libre text-3xl">
+      <h1 className="font-libre text-3xl text-center">
         Lever din hjemmeside op til WCAG`s konventioner?
       </h1>
       <p>

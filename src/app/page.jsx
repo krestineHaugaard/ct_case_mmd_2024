@@ -2,8 +2,10 @@ import Form from "@/components/Form";
 
 export default function Home() {
   return (
-    <main>
-      <h1>Lever din hjemmeside op til WCAG`s konventioner?</h1>
+    <>
+      <h1 className="font-libre text-3xl">
+        Lever din hjemmeside op til WCAG`s konventioner?
+      </h1>
       <p>
         En hjemmeside er ikke bare en hjemmeside, den skal også overholde nogel
         regler der sikre at indholdet loader optimalt, samt at dine besøgene
@@ -15,6 +17,6 @@ export default function Home() {
         udregnet til dig.
       </p>
       <Form />
-    </main>
+    </>
   );
 }

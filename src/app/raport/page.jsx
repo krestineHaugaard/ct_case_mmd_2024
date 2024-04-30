@@ -13,7 +13,7 @@ export default async function Page({ searchParams }) {
   const data = await response.json();
 
   return (
-    <main>
+    <>
       <h1>Report for {data.url}</h1>
       <p>Found {data.violations.length} issues</p>
       <Image
@@ -22,6 +22,6 @@ export default async function Page({ searchParams }) {
         width={data.screenshot.width}
         height={data.screenshot.height}
       />
-    </main>
+    </>
   );
 }

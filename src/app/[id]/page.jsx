@@ -1,3 +1,5 @@
+import Button from "@/components/Button";
+
 export const revalidate = 1800;
 
 export const metadata = {
@@ -11,13 +13,14 @@ export default async function RulesOverviewPage() {
   await new Promise((resolve) => setTimeout(resolve, 3000));
 
   return (
-    <section>
-      <h1 className="text-3xl lg:text-5xl text-center mx-auto">
+    <section className="flex flex-col justify-center items-center">
+      <h1 className="text-3xl lg:text-5xl text-center ">
         Denne side er under opbygning
       </h1>
-      <p className="text-lg lg:text-2xl text-center mx-auto">
+      <p className="text-lg lg:text-2xl text-center mb-8">
         Vi håber den kan være klar snart
       </p>
+      <Button />
     </section>
   );
 }

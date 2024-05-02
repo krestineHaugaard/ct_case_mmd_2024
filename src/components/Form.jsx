@@ -11,7 +11,7 @@ export default function Form() {
         required
         className="rounded-md border-2 border-black px-3 py-2 w-72 md:w-96"
       />
-      <button className="rounded-md border-2 bg-brand-yellow-40 px-3 py-2 w-fit">
+      <button className="rounded-md text-xl border-2 bg-brand-yellow-40 px-3 py-2 w-fit hover:bg-brand-yellow-100 active:bg-brand-yellow-40 focus:outline-none focus:ring focus:ring-brand-beige-10">
         Test website
       </button>
     </form>

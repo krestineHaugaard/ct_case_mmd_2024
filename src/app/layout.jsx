@@ -28,9 +28,9 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${poppins.variable} ${libre_baskerville.variable}`}
     >
-      <body className="font-popp flex flex-col min-h-screen">
+      <body className="font-popp flex flex-col min-h-screen bg-brand-beige-10">
         <Header />
-        <main className="flex-1 p-4 ">{children}</main>
+        <main className="flex-1 p-4 mx-auto lg:max-w-5xl">{children}</main>
         <Footer />
       </body>
     </html>
